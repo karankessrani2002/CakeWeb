@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Feedback Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        html {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: lemonchiffon;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+        }
+
+        .logo {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 230px;
+            height: 110px;
+        }
+
+        ul {
+            list-style-type: none;
+            float: right;
+            margin: 15px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        ul li.active a {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .main {
+            max-width: 1300px;
+            margin: auto;
+            overflow: hidden; /* Clear float */
+        }
+
+        .testbox {
+            width: 50%;
+            float: left;
+            padding: 5% 5% 0 5%;
+        }
+
+        video {
+            width: 50%;
+            max-width: 300px;
+            height: auto;
+            float: left;
+            margin-left: 5%;
+            padding-top: 5%;
+        }
+
+        form {
+            clear: left;
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        h1,
+        h4 {
+            margin: 15px 0 4px;
+            font-weight: 400;
+        }
+
+        span {
+            color: hsla(255, 000, 000);
+        }
+
+        input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            vertical-align: middle;
+        }
+
+        input:hover,
+        textarea:hover,
+        select:hover {
+            outline: none;
+            border: 1px solid #095484;
+        }
+
+        .name input {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 7px 0;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background: #e6eef7;
+        }
+
+        option {
+            background: #fff;
+        }
+
+        select,
+        table {
+            width: 100%;
+        }
+
+        .day-visited,
+        .time-visited {
+            position: relative;
+        }
+
+        .day-visited input,
+        .time-visited input {
+            width: calc(100% - 12px);
+            background: #e6eef7;
+        }
+
+        input[type="date"]::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        input[type="time"]::-webkit-inner-spin-button {
+            margin: 2px 22px 0 0;
+        }
+
+        .day-visited i,
+        .time-visited i,
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            position: absolute;
+            top: 8px;
+            font-size: 20px;
+        }
+
+        .day-visited i,
+        .time-visited i {
+            right: 5px;
+            z-index: 1;
+            color: #a9a9a9;
+        }
+
+        [type="date"]::-webkit-calendar-picker-indicator {
+            right: 0;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .question-answer label {
+            display: block;
+            padding: 0 20px 10px 0;
+        }
+
+        .question-answer input {
+            width: auto;
+            margin-top: -2px;
+        }
+
+        th,
+        td {
+            width: 18%;
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            vertical-align: unset;
+            line-height: 18px;
+            font-weight: 400;
+            word-break: break-all;
+        }
+
+        .first-col {
+            width: 25%;
+            text-align: left;
+        }
+
+        textarea {
+            width: calc(100% - 6px);
+        }
+
+        .btn-block {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            border-radius: 5px;
+            border-radius: 5px;
+            background-color: #095484;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0666a3;
+        }
+
+        @media (min-width: 568px) {
+            .name {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .name input {
+                width: 47%;
+                margin-bottom: 0;
+            }
+
+            th,
+            td {
+                word-break: keep-all;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <a href="IMAGES/TCF-logo.png" target="_blank">
+                <img src="IMAGES/TCF-logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li class="a1"><a href="z-index.html">Home</a></li>
+            <li><a href="cakes2.html">Cakes</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="Feedback.html">Feedback </a></li>
+            <li><a href="crossreference.html">Cross Reference </a></li>
+        </ul>
+    </div>
+</header>
+<video width="320" height="240" controls autoplay muted>
+    <source src="b1.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls autoplay muted>
+  <source src="b2.mp4" type="video/mp4">
+</video>
+<div class="testbox">
+    <form action="z-index.html">
+        <h1>Feedback Form</h1>
+        <p>Please help us improve our restaurant services by filling in our feedback form. Thank you!</p>
+        <h4>Name</h4>
+        <div class="name">
+            <input type="text" name="first_name" placeholder="First" />
+            <input type="text" name="last_name" placeholder="Last" />
+        </div>
+        <h4>Email</h4>
+        <input type="text" name="email" />
+        <h4>Day Visited<span>*</span></h4>
+        <div class="day-visited">
+            <input type="date" name="day_visited" required/>
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <table>
+            <tr>
+                <th class="first-col"></th>
+                <th>Amazing</th>
+                <th>Good</th>
+                <th>Decent</th>
+                <th>Disappointing</th>
+            </tr>
+            <tr>
+                <td class="first-col">Food Quality</td>
+                <td><input type="radio" value="amazing" name="Food" /></td>
+                <td><input type="radio" value="good" name="Food" /></td>
+                <td><input type="radio" value="decent" name="Food" /></td>
+                <td><input type="radio" value="disappointing" name="Food" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Overall Service Quality</td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+              <td><input type="radio" value="none" name="Service" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Speed of Service</td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+              <td><input type="radio" value="none" name="Speed" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Price</td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+              <td><input type="radio" value="none" name="Price" /></td>
+            </tr>
+            <tr>
+              <td class="first-col">Overall Experience</td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+              <td><input type="radio" value="none" name="Experience" /></td>
+            </tr>
+        </table>
+        <h4>Any comments, questions, or suggestions?</h4>
+        <textarea rows="5" name="comments"></textarea>
+        <div class="btn-block">
+            <button type="submit">Send Feedback</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+

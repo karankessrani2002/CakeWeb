@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            text-align: center;
+
+        }
+
+        body {
+            background-color: #f0f0f0;
+            
+}       
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th{
+            color: purple;
+            font-size: 18px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        caption {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        caption {
+            color: white;
+        }
+
+        header {
+            width: auto;
+            height: 0;
+        }
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+
+        }
+
+        ul li {
+            display: inline-block;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+
+        }
+
+        ul li a:hover {
+            background-color:#000  ;
+            color: #fff;
+        }
+
+        ul li.active a {
+            background-color:#000  ;
+            color: #fff;
+
+        }
+
+        .logo img {
+            float: left;
+            width: 230px;
+            height: 110px;
+        }
+
+        .main {
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .tittle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tittle h1 {
+            color: #fff;
+            font-size: 70px;
+            font-family: arizonia;
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="IMAGES/TCF-logo.png" target="_blank">
+                    <img src="IMAGES/TCF-logo.png"></a>
+
+            </div>
+            <ul>
+                <li class="a1"><a href="z-index.html">Home</a></li>
+                <li><a href="cakes2.html">Cakes</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Feedback </a></li>
+                <li><a href="crossreference.html">Cross Reference </a></li>
+               
+
+            </ul>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table>
+            <caption> Cross-Reference Table</caption>
+
+            <tr>
+                <th> Requirement No </th>
+                <th> Requirement Description </th>
+                <th> Page Name </th>
+            </tr>
+
+            <tr>
+                <td> 5.1 a </td>
+                <td> section elements tag,including use of HTML5 structural tags </td>
+                <td> <a href="contact us.html">Contact us</a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.1 b </td>
+                <td> Inline Images both static and clickable </td>
+                <td><a href="cakes2.html"> Cakes 2</a> <a href="z-index.html"> Index.html </a></td>
+            </tr>
+
+            <tr>
+                <td> 5.1 c </td>
+                <td> Background Images</td>
+                <td> <a href="z-index.html">Index </a></td>
+            </tr>
+
+            <tr>
+                <td> 5.1 d </td>
+                <td> Use of appropriate Special Characters. </td>
+                <td> <a href="z-index.html">Index (Copyright symbol)</a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.1 e </td>
+                <td> Meta Tags </td>
+                <td> <a href="z-index.html"> Index,</a><a href="cakes2.html"> cakes,</a><a
+                        href="Feedback.html">Feedback</a></td>
+            </tr>
+
+            <tr>
+                <td> 5.1 f </td>
+                <td> Footer with Links </td>
+                <td> <a href="z-index.html">Index </a></td>
+            </tr>
+
+            <tr>
+                <td> 5.1 g </td>
+                <td> Website last Updated using javascript DOM in footer</td>
+                <td> <a href="z-index.html">Index</a></td>
+            </tr>
+
+            <tr>
+                <td> 5.2 a </td>
+                <td> Css to Format </td>
+                <td> <a href="z-index.html">Index</a></td>
+            </tr>
+
+            <tr>
+                <td> 5.2 b </td>
+                <td> Contextual/Combinators selectors </td>
+                <td> <a href="cakes2.html">Cakes, </a> <a href="z-index.html">Index </a></td>
+            </tr>
+
+            <tr>
+                <td> 5.2 c </td>
+                <td> CSS for color </td>
+                <td> <a href="Feedback.html">Feedback </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.2 d </td>
+                <td> Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active,
+                    hover; </td>
+                <td> <a href="cakes2.html">cakes,</a><a href="z-index.html">Index </a></td>
+            </tr>
+
+            <tr>
+                <td> 5.2 e </td>
+                <td> CSS Background Styles </td>
+                <td> <a href="z-index.html">Index </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.2 f </td>
+                <td> Float and Grid Layouts </td>
+                <td> <a href="z-index.html">Index, </a> <a href="Feedback.html">Feedback</a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.2 g </td>
+                <td> Text and Box Shadows (CSS) </td>
+                <td> <a href="Feedback.html">Feedback </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.2 h </td>
+                <td> Opacity </td>
+                <td> <a href="Feedback.html"> Feedback </a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.3 a </td>
+                <td> Form elements </td>
+                <td> <a href="Feedback.html">Feedback, </a><a href="contact us.html">Contact Us</a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.3 b </td>
+                <td> Apply appropriate styles to web forms </td>
+                <td> <a href="stylecss.css">Styling </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.3 c </td>
+                <td> Form Validation </td>
+                <td> <a href="contact us.html">Contact Us </a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.4 a </td>
+                <td> Use of Web Table </td>
+                <td> <a href="crossreference.html">Cross Reference,</a><a href="Feedback.html">Feedback</a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.5 a </td>
+                <td> Video </td>
+                <td> <a href="Feedback.html">Feedback</a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.5 b </td>
+                <td> Transitions and Animations </td>
+                <td> <a href="cakes2.html">Cakes,</a><a href="contact us.html">Contact Us</a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.6 a </td>
+                <td> Use of system date </td>
+                <td> <a href="z-index.html"> Index</a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.6 b </td>
+                <td> Validating Form Input JS </td>
+                <td> <a href="contact us.html">Contact Us </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.6 c </td>
+                <td> Use of Javscript alerts </td>
+                <td> <a href="contact us.html">Contact Us </a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 5.7 a </td>
+                <td> Responsive Design </td>
+                <td> <a href="z-index.html"> Index </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.7 c </td>
+                <td> Responsive Image </td>
+                <td> <a href="cakes2.html"> Cakes </a> </td>
+            </tr>
+
+            <tr>
+                <td> 5.7 d </td>
+                <td> Responsive Web Form </td>
+                <td> <a href="contact us.html">Contact us, </a><a href="Feedback.html">Feedback</a> </td>
+            </tr>
+
+        </table>
+    </header>
+</body>
+
+</html>

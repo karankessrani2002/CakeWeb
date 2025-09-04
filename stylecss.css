@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url( IMAGES/cakes_dessert_cream_133832_1920x1080.jpg);
+		height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	
+}
+ul li{
+	display: inline-block;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{background-color: #fff;
+	color: #000;
+	
+}
+.logo img{
+	float: left;
+	width: 230px;
+	height: 110px;
+}
+.main{
+	max-width: 1300px;
+	margin: auto;
+}
+.tittle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.tittle h1{
+	color: #fff;
+	font-size: 70px;
+	font-family: arizonia;
+}
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+/*CAKES....*/
+body{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: sans-serif;
+	
+}
+.container{
+	width: 1280px;
+/*
+	min-height: 500px;
+	background: #fff;
+*/
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	
+	
+}
+.container .box .imagebox{
+	position: relative;
+	overflow: hidden;
+	
+	
+}
+.container .box .imagebox img{
+	max-width: 100%;
+	height: 300px;
+	transition: transform 2s;
+}
+.container .box:hover .imagebox img{
+	transform: scale(1.2)
+	
+}
+.container .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details{
+	
+	transform: scaleY(1);
+}
+.container .box .details .content{
+	position: absolute;
+	top: 16%;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+.container .box .details .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #ff0;
+}
+.container .box .details .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	
+
+}
